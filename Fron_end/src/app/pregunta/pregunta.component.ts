@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Pregunta } from './pregunta';
+import { PreguntaService } from './pregunta.service';
 
 @Component({
   selector: 'app-pregunta',
@@ -6,10 +8,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./pregunta.component.css']
 })
 export class PreguntaComponent implements OnInit {
-
-  constructor() { }
+  preguntas: Pregunta[] = [];
+  constructor(private preguntaService:PreguntaService) { }
 
   ngOnInit(): void {
+    this.preguntaService.getAll().subscribe((data:Pregunta[])=> {
+      this.preguntas=data;
+    });
   }
+    
 
 }
