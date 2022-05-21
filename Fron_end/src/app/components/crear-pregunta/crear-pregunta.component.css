@@ -1,0 +1,33 @@
+
+.body{
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    align-items: center;
+    }
+    .carnet{
+        margin-top: 50px;
+        margin-block-end: 50px;
+        text-align: center;
+        background: #ffffff99;
+        width: 600px;
+        border-radius: 8%;
+    }
+    .ancho{
+        width: 80%;
+        height: 90px;
+        font-size: large;
+    
+    }
+    .example-button-row {
+        display: table-cell;
+        width: 490px;
+      }
+      .btn{
+    margin-left: 25%;
+    text-align: center;
+    width: 80%;
+    height: 50px;
+    font-size: large;
+    margin-block-end: 10px;
+      }

@@ -1,0 +1,47 @@
+<div class="body">
+    <div class="carnet">
+        <form [formGroup]="form">
+            <h1>Crear pregunta</h1>
+            <mat-form-field class="ancho"appearance="fill" >
+                <mat-label>Enunciado</mat-label>
+                   <input matInput formControlName="enunciado" autocomplete="off">
+               </mat-form-field>
+               <br>
+            <mat-form-field class="ancho" appearance="fill">
+                    <mat-label >Tipo de pregunta</mat-label>
+                        <select matNativeControl required>
+                            <option value="">Abierta</option>
+                            <option value="saab">Seleccion multiple</option>
+                            <option value="mercedes">Falso y verdadero </option>
+                         </select>
+                    </mat-form-field>
+            <br>
+            <mat-form-field class="ancho" appearance="fill" >
+                <mat-label>Respuesta</mat-label>
+             <input matInput   formControlName="respuesta">
+            </mat-form-field>
+            <br>
+            <mat-form-field class="ancho" appearance="fill" >
+                <mat-label>Retrolimentacion</mat-label>
+             <input matInput  formControlName="retroalimentacion">
+            </mat-form-field>
+            <br>
+            <mat-form-field class="ancho" appearance="fill" >
+                <mat-label>Materia</mat-label>
+             <input matInput  formControlName="materia">
+            </mat-form-field>
+            <br>
+            <mat-form-field class="ancho" appearance="fill" >
+                <mat-label>Corte</mat-label>
+             <input matInput   formControlName="corte">
+            </mat-form-field>
+            <br>
+            
+            <br>
+            <div class="example-button-row">
+            <button mat-raised-button class="btn"(click)="nuevoPregunta()" color="primary">Agregar Pregunta</button>
+        </div>
+        </form>
+</div>
+</div>
+

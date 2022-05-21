@@ -1,17 +1,20 @@
-<h1>PREGUNTAS PARA LA PLATAFORMA MOODLE</h1>
-
-  <div>
-    <p>Ingrese nombre de la pregunta</p>
-    <input type="text" #box1 (keyup)="getTexto(box1.value)" placeholder="Ingrese texto" name="textoPreugnta"/>
-  </div>
-  
-  <div>
-    <p>Ingrese titulo de la pregunta</p>
-    <input type="text" #box2 (keyup)="getTitulo(box2.value)" placeholder="Ingrese titulo de la pregunta" name="tituloPregunta"/>
-  </div>
-
-  <div>
-    <h3>Formato generado</h3>
-    <p>{{'// ' + outTexto}}</p>
-    <p>{{'::' + outTitulo + '::'}}</p>
-  </div>
+<div>
+  <nav class="navbar navbar-expand navbar-dark bg-primary">
+    <div class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link">Generador preguntas</a>
+      </li>
+      <li class="nav-item">
+        <a  routerLink="crear" class="nav-link">Crear pregunta</a>
+      </li>
+      <li class="nav-item">
+        <a  routerLink="listar" class="nav-link">Listar preguntas</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/logout" >Logout</a>
+      </li>
+    </div>
+  </nav>
+  <div class="container mt-3">
+    <router-outlet></router-outlet>
+</div>
