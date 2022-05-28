@@ -1,0 +1,25 @@
+<button class="close" mat-button (click)="cerrar()">X</button> <h1 mat-dialog-title>Login</h1> <div mat-dialog-content> ... ... </div>
+<div class="body">
+    <div class="login">
+        <form  >
+            <h1>PREGUNTA ABIERTA</h1>
+            <mat-form-field class="ancho"appearance="fill" >
+             <mat-label>Titulo de la pregunta:</mat-label>
+                <input matInput formControlName="enunciado">
+            </mat-form-field>
+            <br>
+            <mat-form-field class="ancho" appearance="fill" >
+                <mat-label>Descripcion de la pregunta:</mat-label>
+             <input matInput type="password"  formControlName="pregunta">
+            </mat-form-field>
+            <br>
+            <mat-form-field class="ancho" appearance="fill" >
+                <mat-label>Retroalimentacion:</mat-label>
+             <input matInput type="password"  formControlName="retroalimentacion">
+            </mat-form-field>
+            <br>
+            <button mat-raised-button color="primary" type="submit" class="btn" >Guardar</button>
+            <button mat-raised-button color="primary"  class="btn2 ">Cancelar</button>
+        </form>
+    </div>
+</div>

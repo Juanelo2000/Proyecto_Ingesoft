@@ -16,14 +16,14 @@ import org.springframework.web.bind.annotation.RestController;
 import com.generadorpreguntas.model.materia;
 import com.generadorpreguntas.model.pregunta;
 import com.generadorpreguntas.repository.materia_repository;
-import com.generadorpreguntas.repository.preguntaRepository;
+import com.generadorpreguntas.repository.pregunta_repository;
 @RestController 
 @RequestMapping("/generadorpreguntas")
 @CrossOrigin(origins = "http://localhost:4200")
 public class PreguntasController {
 	
 	@Autowired
-	preguntaRepository preguntarepository;
+	pregunta_repository preguntarepository;
 	
 	@GetMapping("/listaPreguntas") //Mostrar todos los registros
 	public List<pregunta> buscarPregunta() {
@@ -72,7 +72,7 @@ public class PreguntasController {
 	//FILTRO
 	
 		//Query
-	
+	/*
 		@GetMapping("/buscarMateria/{nomMateria}")
 		public List<pregunta> buscarMateria(@PathVariable String nomMateria){
 			return preguntarepository.buscarMateria(nomMateria);
@@ -82,7 +82,7 @@ public class PreguntasController {
 		public List<pregunta> buscarMateriaCalc(){
 			return preguntarepository.buscarMateriaCalc();
 		}
-		
+		*/
 		//Query
 		
 		/*

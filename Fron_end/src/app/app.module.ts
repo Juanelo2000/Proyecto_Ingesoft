@@ -9,20 +9,24 @@ import { CrearPreguntaService } from './services/crear-pregunta.service';
 import { FormsModule,ReactiveFormsModule} from '@angular/forms';
 import {MatInputModule} from '@angular/material/input';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {MatDialogModule} from '@angular/material/dialog';
 import {MatSelectModule} from '@angular/material/select';
 import { PreguntaComponent } from './PruebaMiguel/pregunta/pregunta.component';
+import { PreguntaAbiertaComponent } from './components/pregunta-abierta/pregunta-abierta.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     CrearPreguntaComponent,
     ListarPreguntasComponent,
-    PreguntaComponent //Esto es de Miguel
+    PreguntaComponent,
+    PreguntaAbiertaComponent
    
   ],
   imports: [
     BrowserModule,HttpClientModule,AppRoutinModule,
     FormsModule,MatInputModule,BrowserAnimationsModule,
-    ReactiveFormsModule,MatSelectModule
+    ReactiveFormsModule,MatSelectModule,MatDialogModule
   ],
   providers: [CrearPreguntaService],
   bootstrap: [AppComponent]
