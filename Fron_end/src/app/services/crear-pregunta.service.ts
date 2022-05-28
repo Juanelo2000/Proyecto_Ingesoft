@@ -6,7 +6,7 @@ import { Pregunta } from '../models/pregunta';
   providedIn: 'root'
 })
 export class CrearPreguntaService {
-  private url= "http://localhost:8080/generadorpreguntas/Customers"
+  private url= "http://localhost:8080/generadorpreguntas"
   constructor(private http:HttpClient) { }
 
   nuevaPregunta(pregunta:Pregunta){

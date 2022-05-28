@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Oswald:400,700);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 body{
-  background: #f0f0f0;
+  background: #ffffff;
   font-family: Open Sans ,sans-serif;
   line-height:1.5em;
 }
@@ -9,7 +9,7 @@ body{
 width: 500px;
 margin:2em auto;
 background:#f0d1a3;
-position: relative;
+text-align: center;
 }
 #contact::after {
 content: "";
@@ -34,12 +34,12 @@ font-size: 1.75em;
 padding: 0.6em 0 0.6em 0.4em;
 color: white;
 text-shadow: 0 0.06em 0 #424242;
-text-align: center;
+position: relative;
 }
 .contactbutton {
 background: #f09723;
 -webkit-box-shadow: 1px 1px 0 0 #832032,2px 2px 0 0 #832032,3px 3px 0 0 #832032;
-box-shadow: 1px 1px 0 0 #ca432b,2px 2px 0 0 #ca432b,3px 3px 0 0 #ca432b;
+box-shadow: 1px 1px 0 0 #832032,2px 2px 0 0 #832032,3px 3px 0 0 #832032;
 text-align: center;
 display: block;
 width: 100%;
@@ -50,7 +50,7 @@ cursor: pointer;
 }
 .contactbutton:hover {
 -webkit-box-shadow: 1px 1px 0 0 #832032,0px 0px 0 0 #832032,0px 0px 0 0 #832032;
-box-shadow: 1px 1px 0 0 #ca432b,2px 2px 0 0 #ca432b,3px 3px 0 0 #ca432b;
+box-shadow: 1px 1px 0 0 #832032,0px 0px 0 0 #832032,0px 0px 0 0 #832032;
 margin-top: 22px;
 margin-left: 2px;
 margin-bottom: 0px;

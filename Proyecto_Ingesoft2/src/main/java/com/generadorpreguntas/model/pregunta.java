@@ -1,31 +1,45 @@
 package com.generadorpreguntas.model;
 
+import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 
 
 @Document(collection = "preguntas")
 public class pregunta {
-	
-    private String enunciado;
-    private String Retroalimentacion;
-    private String[] respuestas;
-    private int idMateria;
+
+	private int idMateria;
+	private String nomMateria;
+	private String enunciado;
+    private String retroalimentacion;
+    //private String[] respuestas;
     private int corte;
     
-	public pregunta( String enunciado, String retroalimentacion, String[] respuestas, int idMateria, int corte) {
+	public pregunta(String nomMateria, int idMateria, String enunciado, String retroalimentacion, /*String[] respuestas,, */int corte) {
 		super();
 		
-		this.enunciado = enunciado;
-		Retroalimentacion = retroalimentacion;
-		this.respuestas = respuestas;
+		
 		this.idMateria = idMateria;
+		this.nomMateria = nomMateria;
+		this.enunciado = enunciado;
+		this.retroalimentacion = retroalimentacion;
+		//this.respuestas = respuestas;
 		this.corte = corte;
 	}
+	
+	
+	
 	public pregunta() {
 	
 	}
 	
+	
+	public String getNomMateria() {
+		return nomMateria;
+	}
+	public void setNomMateria(String nomMateria) {
+		this.nomMateria = nomMateria;
+	}
 	public String getEnunciado() {
 		return enunciado;
 	}
@@ -33,17 +47,17 @@ public class pregunta {
 		this.enunciado = enunciado;
 	}
 	public String getRetroalimentacion() {
-		return Retroalimentacion;
+		return retroalimentacion;
 	}
 	public void setRetroalimentacion(String retroalimentacion) {
-		Retroalimentacion = retroalimentacion;
+		this.retroalimentacion = retroalimentacion;
 	}
-	public String[] getRespuestas() {
+	/*public String[] getRespuestas() {
 		return respuestas;
 	}
 	public void setRespuestas(String[] respuestas) {
 		this.respuestas = respuestas;
-	}
+	}*/
 	public int getIdMateria() {
 		return idMateria;
 	}
