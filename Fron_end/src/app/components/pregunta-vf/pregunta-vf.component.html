@@ -1,21 +1,47 @@
 <div class="body">
     <div class="login">
         <form [formGroup]="form">
-            <h1>PREGUNTA VEDADERO O FALSO</h1>
+            <h1>VEDADERO O FALSO</h1>
             <mat-form-field class="ancho" appearance="fill" >
                 <mat-label>Descripcion de la pregunta:</mat-label>
              <input matInput   formControlName="descripcion">
             </mat-form-field>
             <br>
 
-            <mat-form-field class="ancho" appearance="fill">
-                <mat-label >Respuesta correcta:</mat-label>
-                    <select matNativeControl required formControlName="tipo">
-                        <option value="verdadero">Verdadero</option>
-                        <option value="falso">Falso</option>
-                     </select>
-                </mat-form-field>
+            <mat-form-field class="correcto" appearance="fill" >
+                <mat-label>Respuesta correcta</mat-label>
+             <input matInput   formControlName="descripcion">
+            </mat-form-field>
 
+            <br>
+
+            <mat-form-field class="correcto" appearance="fill" >
+                <mat-label>Respuesta incorrecta</mat-label>
+             <input matInput   formControlName="descripcion">
+            </mat-form-field>
+
+            <br>
+
+            <mat-form-field class="correcto" appearance="fill" >
+                <mat-label>Respuesta incorrecta</mat-label>
+             <input matInput   formControlName="descripcion">
+            </mat-form-field>
+
+            <br>
+
+            <mat-form-field class="correcto" appearance="fill" >
+                <mat-label>Respuesta incorrecta</mat-label>
+             <input matInput   formControlName="descripcion">
+            </mat-form-field>
+
+            <br>
+
+            <mat-form-field class="correcto" appearance="fill" >
+                <mat-label>Respuesta incorrecta</mat-label>
+             <input matInput   formControlName="descripcion">
+            </mat-form-field>
+
+            <br>
             <mat-form-field class="ancho" appearance="fill" >
                 <mat-label>Retroalimentacion:</mat-label>
              <input matInput   formControlName="retroalimentacion">

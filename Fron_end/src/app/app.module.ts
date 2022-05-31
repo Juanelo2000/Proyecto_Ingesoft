@@ -14,6 +14,7 @@ import {MatSelectModule} from '@angular/material/select';
 import { PreguntaComponent } from './PruebaMiguel/pregunta/pregunta.component';
 import { PreguntaAbiertaComponent } from './components/pregunta-abierta/pregunta-abierta.component';
 import { PreguntaVfComponent } from './components/pregunta-vf/pregunta-vf.component';
+import { PreguntaOpcionmultipleComponent } from './components/pregunta-opcionmultiple/pregunta-opcionmultiple.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { PreguntaVfComponent } from './components/pregunta-vf/pregunta-vf.compon
     ListarPreguntasComponent,
     PreguntaComponent,
     PreguntaAbiertaComponent,
-    PreguntaVfComponent
+    PreguntaVfComponent,
+    PreguntaOpcionmultipleComponent
    
   ],
   imports: [
