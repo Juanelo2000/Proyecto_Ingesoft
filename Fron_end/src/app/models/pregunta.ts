@@ -1,9 +1,12 @@
 export class Pregunta {
 
-   // nomMateria: string 
-    idMateria!: number;
-    enunciado!: string;
-    Retroalimentacion!: string;
+    id!:number; 
+    materia!:string;
+    titulo!: string;
+    descripcion!: string;
+    retroalimentacion!: string;
     respuestas!: String[];
     corte!: number;
+
+    
 }

@@ -28,18 +28,7 @@ export class CrearPreguntaComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  nuevoPregunta(){
-    console.log("si")
 
-    this.pregunta.enunciado=this.form.value.enunciado;
-    
-    this.service.nuevaPregunta(this.pregunta)
-    .subscribe(data=>{})
-    console.log(this.pregunta)
-    this.form.reset
-
- 
-  }
   openDialog() {
    
     if(this.form.value.tipo=="abierta"){

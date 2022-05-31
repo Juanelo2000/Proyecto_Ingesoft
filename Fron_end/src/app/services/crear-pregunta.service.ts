@@ -11,6 +11,10 @@ export class CrearPreguntaService {
 
   nuevaPregunta(pregunta:Pregunta){
     console.log("AQUI ES EL ERROR")
-    return this.http.post<Pregunta>(this.url,pregunta)
+    return this.http.post<Pregunta>(this.url+"/guardarPregunta",pregunta)
+  }
+  getPregunta():Observable<Pregunta[]>{
+    return this.http.get<Pregunta[]>(`${this.url+"/listaPreguntas"}`)
+    
   }
 }

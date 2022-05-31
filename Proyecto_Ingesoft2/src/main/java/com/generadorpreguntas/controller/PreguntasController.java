@@ -45,11 +45,13 @@ public class PreguntasController {
 		
 		pregunta nueva = preguntarepository.findById(id).get();
 		
+		nueva.setTitulo(pregunta.getTitulo());
+		nueva.setDescripcion(pregunta.getDescripcion());
 		nueva.setCorte(pregunta.getCorte());
-		nueva.setEnunciado(pregunta.getEnunciado());
-		nueva.setIdMateria(pregunta.getIdMateria());
-		//nueva.setRespuestas(pregunta.getRespuestas());
+		nueva.setMateria(pregunta.getMateria());
+		nueva.setRespuestas(pregunta.getRespuestas());
 		nueva.setRetroalimentacion(pregunta.getRetroalimentacion());
+		
 		
 		
 		preguntarepository.save(nueva);
