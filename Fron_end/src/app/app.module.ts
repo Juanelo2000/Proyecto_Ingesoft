@@ -13,6 +13,7 @@ import {MatDialogModule} from '@angular/material/dialog';
 import {MatSelectModule} from '@angular/material/select';
 import { PreguntaComponent } from './PruebaMiguel/pregunta/pregunta.component';
 import { PreguntaAbiertaComponent } from './components/pregunta-abierta/pregunta-abierta.component';
+import { PreguntaVfComponent } from './components/pregunta-vf/pregunta-vf.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { PreguntaAbiertaComponent } from './components/pregunta-abierta/pregunta
     CrearPreguntaComponent,
     ListarPreguntasComponent,
     PreguntaComponent,
-    PreguntaAbiertaComponent
+    PreguntaAbiertaComponent,
+    PreguntaVfComponent
    
   ],
   imports: [

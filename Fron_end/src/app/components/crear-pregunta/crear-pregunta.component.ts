@@ -5,6 +5,8 @@ import { Pregunta } from 'src/app/models/pregunta';
 import { CrearPreguntaService } from 'src/app/services/crear-pregunta.service';
 import { PreguntaAbiertaComponent } from '../pregunta-abierta/pregunta-abierta.component';
 import {MatDialog} from '@angular/material/dialog';
+import { PreguntaVfComponent } from '../pregunta-vf/pregunta-vf.component';
+
 
 @Component({
   selector: 'app-crear-pregunta',
@@ -34,8 +36,10 @@ export class CrearPreguntaComponent implements OnInit {
     if(this.form.value.tipo=="abierta"){
       console.log(this.form.value.tipo)
       this.dialog.open(PreguntaAbiertaComponent);
+    }
 
-
+    if(this.form.value.tipo == "vyf"){
+      this.dialog.open(PreguntaVfComponent)
     }
   }
 
