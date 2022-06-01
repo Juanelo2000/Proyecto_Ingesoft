@@ -17,6 +17,7 @@ import com.generadorpreguntas.model.materia;
 import com.generadorpreguntas.model.pregunta;
 import com.generadorpreguntas.repository.materia_repository;
 import com.generadorpreguntas.repository.pregunta_repository;
+import com.generadorpreguntas.service.SequenceGeneratorService;
 @RestController 
 @RequestMapping("/generadorpreguntas")
 @CrossOrigin(origins = "http://localhost:4200")
@@ -24,7 +25,8 @@ public class PreguntasController {
 	
 	@Autowired
 	pregunta_repository preguntarepository;
-	
+	@Autowired
+	SequenceGeneratorService service;
 	@GetMapping("/listaPreguntas") //Mostrar todos los registros
 	public List<pregunta> buscarPregunta() {
 		return preguntarepository.findAll();
@@ -32,6 +34,7 @@ public class PreguntasController {
 	
 	@PostMapping("/guardarPregunta") //Guardar 1
 	public pregunta guardar(@RequestBody pregunta pregunta){
+		pregunta.setId(service.getSequenceNumber(pregunta.SEQUENCE_NAME));
 		return preguntarepository.save(pregunta);
 	}
 	

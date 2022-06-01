@@ -6,6 +6,7 @@ import { CrearPreguntaService } from 'src/app/services/crear-pregunta.service';
 import { PreguntaAbiertaComponent } from '../pregunta-abierta/pregunta-abierta.component';
 import {MatDialog} from '@angular/material/dialog';
 import { PreguntaVfComponent } from '../pregunta-vf/pregunta-vf.component';
+import { PreguntaOpcionmultipleComponent } from '../pregunta-opcionmultiple/pregunta-opcionmultiple.component';
 
 
 @Component({
@@ -19,10 +20,6 @@ export class CrearPreguntaComponent implements OnInit {
   pregunta:Pregunta=new Pregunta();
   constructor(public dialog:MatDialog ,private fb:FormBuilder,private route:Router,private service:CrearPreguntaService) {
     this.form=this.fb.group({
-      enunciado:['',Validators.required],
-      retroalimentacion:['',Validators.required],
-      materia:['',Validators.required],
-      corte:['',Validators.required],
       tipo:['',Validators.required]
 
     })
@@ -34,12 +31,13 @@ export class CrearPreguntaComponent implements OnInit {
   openDialog() {
    
     if(this.form.value.tipo=="abierta"){
-      console.log(this.form.value.tipo)
       this.dialog.open(PreguntaAbiertaComponent);
     }
-
-    if(this.form.value.tipo == "vyf"){
+    if(this.form.value.tipo=="vyf"){
       this.dialog.open(PreguntaVfComponent)
+    }
+    if(this.form.value.tipo=="multiple"){
+      this.dialog.open(PreguntaOpcionmultipleComponent)
     }
   }
 

@@ -37,12 +37,11 @@ export class PreguntaAbiertaComponent implements OnInit {
     this.service.getPregunta()
     .subscribe(data=>{
       this.preguntas=data;
-      this.pregunta.id=this.preguntas.length
      })
     this.service.nuevaPregunta(this.pregunta)
     .subscribe(data=>{})
     console.log(this.pregunta)
-    this.form.reset
+    this.form.reset()
 
  
   }

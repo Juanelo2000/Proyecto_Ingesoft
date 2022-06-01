@@ -1,13 +1,15 @@
 package com.generadorpreguntas.model;
 
 import org.springframework.data.annotation.Id;
+import org.springframework.data.annotation.Transient;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 
 
 @Document(collection = "preguntas")
 public class pregunta {
-	@Id
+	@Transient
+	public static final String SEQUENCE_NAME = "despa_sequence";
 	private int id;
 	private String materia;
 	private String titulo;                //::titulo::

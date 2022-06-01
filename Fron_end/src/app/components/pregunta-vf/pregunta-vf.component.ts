@@ -14,10 +14,11 @@ export class PreguntaVfComponent implements OnInit {
   form:FormGroup;
   pregunta:Pregunta=new Pregunta();
   preguntas: Array<Pregunta>=new Array();
+  respuestas: Array<String>=new Array();
   
   constructor(public dialog: MatDialog,private fb:FormBuilder,private route:Router,private service:CrearPreguntaService) {
     this.form=this.fb.group({
-      titulo:['',Validators.required],
+      tipo:['',Validators.required],
       descripcion:['',Validators.required],
       retroalimentacion:['',Validators.required]
 
@@ -27,16 +28,15 @@ export class PreguntaVfComponent implements OnInit {
   ngOnInit(): void {
   }
   nuevoPregunta(){
-    console.log("si")
-
-    this.pregunta.titulo=this.form.value.titulo
+    this.respuestas.pop()
+    this.respuestas.push(this.form.value.tipo)
+    this.pregunta.respuestas=this.respuestas
     this.pregunta.descripcion=this.form.value.descripcion
     this.pregunta.retroalimentacion=this.form.value.retroalimentacion
-   
     this.service.getPregunta()
     .subscribe(data=>{
       this.preguntas=data;
-      this.pregunta.id=this.preguntas.length
+      
      })
     this.service.nuevaPregunta(this.pregunta)
     .subscribe(data=>{})
@@ -45,6 +45,5 @@ export class PreguntaVfComponent implements OnInit {
 
  
   }
- cerrar(){
- }
+
     }
