@@ -8,6 +8,7 @@ export class Pregunta {
     respuestas!: String[];
     corte!: number;
     select!: boolean;
+    tipo!: string;
 
     
 }

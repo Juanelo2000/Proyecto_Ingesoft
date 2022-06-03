@@ -15,6 +15,7 @@ import { PreguntaComponent } from './PruebaMiguel/pregunta/pregunta.component';
 import { PreguntaAbiertaComponent } from './components/pregunta-abierta/pregunta-abierta.component';
 import { PreguntaVfComponent } from './components/pregunta-vf/pregunta-vf.component';
 import { PreguntaOpcionmultipleComponent } from './components/pregunta-opcionmultiple/pregunta-opcionmultiple.component';
+import { TipoPreguntaComponent } from './components/tipo-pregunta/tipo-pregunta.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { PreguntaOpcionmultipleComponent } from './components/pregunta-opcionmul
     PreguntaComponent,
     PreguntaAbiertaComponent,
     PreguntaVfComponent,
-    PreguntaOpcionmultipleComponent
+    PreguntaOpcionmultipleComponent,
+    TipoPreguntaComponent
    
   ],
   imports: [
