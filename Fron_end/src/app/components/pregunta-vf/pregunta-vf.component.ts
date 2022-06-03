@@ -51,6 +51,7 @@ export class PreguntaVfComponent implements OnInit {
     this.pregunta.corte=this.form.value.corte
     this.pregunta.tipo="verdadero y falso"
 
+
     this.service.getPregunta()
     .subscribe(data=>{
       this.preguntas=data;

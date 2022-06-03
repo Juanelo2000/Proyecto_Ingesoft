@@ -14,7 +14,6 @@ import {MatSelectModule} from '@angular/material/select';
 import { PreguntaAbiertaComponent } from './components/pregunta-abierta/pregunta-abierta.component';
 import { PreguntaVfComponent } from './components/pregunta-vf/pregunta-vf.component';
 import { PreguntaOpcionmultipleComponent } from './components/pregunta-opcionmultiple/pregunta-opcionmultiple.component';
-import { ConvertirFormatoComponent } from './components/convertir-formato/convertir-formato.component';
 
 
 @NgModule({
@@ -25,7 +24,7 @@ import { ConvertirFormatoComponent } from './components/convertir-formato/conver
     PreguntaAbiertaComponent,
     PreguntaVfComponent,
     PreguntaOpcionmultipleComponent,
-    ConvertirFormatoComponent
+    PreguntaOpcionmultipleComponent
   ],
   imports: [
     BrowserModule,HttpClientModule,AppRoutinModule,
