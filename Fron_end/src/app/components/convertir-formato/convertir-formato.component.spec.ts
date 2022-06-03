@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PreguntaComponent } from './pregunta.component';
+import { ConvertirFormatoComponent } from './convertir-formato.component';
 
-describe('PreguntaComponent', () => {
-  let component: PreguntaComponent;
-  let fixture: ComponentFixture<PreguntaComponent>;
+describe('ConvertirFormatoComponent', () => {
+  let component: ConvertirFormatoComponent;
+  let fixture: ComponentFixture<ConvertirFormatoComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ PreguntaComponent ]
+      declarations: [ ConvertirFormatoComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(PreguntaComponent);
+    fixture = TestBed.createComponent(ConvertirFormatoComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -11,21 +11,20 @@ import {MatInputModule} from '@angular/material/input';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatSelectModule} from '@angular/material/select';
-import { PreguntaComponent } from './PruebaMiguel/pregunta/pregunta.component';
 import { PreguntaAbiertaComponent } from './components/pregunta-abierta/pregunta-abierta.component';
 import { PreguntaVfComponent } from './components/pregunta-vf/pregunta-vf.component';
 import { PreguntaOpcionmultipleComponent } from './components/pregunta-opcionmultiple/pregunta-opcionmultiple.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     CrearPreguntaComponent,
     ListarPreguntasComponent,
-    PreguntaComponent,
     PreguntaAbiertaComponent,
     PreguntaVfComponent,
+    PreguntaOpcionmultipleComponent,
     PreguntaOpcionmultipleComponent
-   
   ],
   imports: [
     BrowserModule,HttpClientModule,AppRoutinModule,
