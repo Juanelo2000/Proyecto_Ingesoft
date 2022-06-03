@@ -39,8 +39,8 @@
              <input matInput   formControlName="retroalimentacion">
             </mat-form-field>
             <br>
-            <button mat-raised-button color="primary" type="submit" (click)="nuevoPregunta()"class="btn" >Guardar</button>
-            <button mat-raised-button mat-dialog-close color="primary"  class="btn2 ">Cancelar</button>
+            <button mat-raised-button color="primary" type="submit" [disabled]="form.invalid" (click)="nuevoPregunta()" class="btn" >Guardar</button>
+            <button mat-raised-button mat-dialog-close color="primary"  class="btn">Cancelar</button>
         </form>
     </div>
 </div>

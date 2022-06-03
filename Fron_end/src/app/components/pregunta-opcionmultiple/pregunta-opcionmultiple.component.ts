@@ -50,7 +50,6 @@ export class PreguntaOpcionmultipleComponent implements OnInit {
     this.respuesta = new Array();
 
     this.pregunta.materia=this.form.value.materia
-
     this.pregunta.titulo=this.form.value.titulo
     this.respuesta.push(this.form.value.respuesta1)
     this.respuesta.push(this.form.value.respuesta2)
@@ -60,7 +59,6 @@ export class PreguntaOpcionmultipleComponent implements OnInit {
     this.pregunta.respuestas= this.respuesta
     this.pregunta.descripcion=this.form.value.descripcion
     this.pregunta.retroalimentacion=this.form.value.retroalimentacion
-
     this.pregunta.corte=this.form.value.corte
     this.pregunta.tipo="opcion multiple"
    

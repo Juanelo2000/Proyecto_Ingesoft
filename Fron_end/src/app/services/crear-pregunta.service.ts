@@ -11,6 +11,7 @@ export class CrearPreguntaService {
   constructor(private http:HttpClient) { }
 
   nuevaPregunta(pregunta:Pregunta){
+    
     console.log("AQUI ES EL ERROR")
     return this.http.post<Pregunta>(this.url+"/guardarPregunta",pregunta)
   }
