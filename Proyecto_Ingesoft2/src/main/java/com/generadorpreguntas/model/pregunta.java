@@ -18,8 +18,9 @@ public class pregunta {
     private String[] respuestas;
     private int corte;
     private boolean select;
+    private String tipo;
 	public pregunta(String materia, String titulo, String descripcion, String retroalimentacion, String[] respuestas,
-			int corte, boolean select) {
+			int corte, boolean select, String tipo) {
 		super();
 		this.materia = materia;
 		this.titulo = titulo;
@@ -28,7 +29,9 @@ public class pregunta {
 		this.respuestas = respuestas;
 		this.corte = corte;
 		this.select = select;
+		this.tipo = tipo;
 	}
+
 	public pregunta() {
 		super();
 		// TODO Auto-generated constructor stub
@@ -82,7 +85,12 @@ public class pregunta {
 		this.select = select;
 	}
     
-	
+	public String getTipo() {
+		return tipo;
+	}
+	public void setTipo(String tipo) {
+		this.tipo = tipo;
+	}
     
 
 }

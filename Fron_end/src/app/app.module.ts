@@ -16,6 +16,7 @@ import { PreguntaVfComponent } from './components/pregunta-vf/pregunta-vf.compon
 import { PreguntaOpcionmultipleComponent } from './components/pregunta-opcionmultiple/pregunta-opcionmultiple.component';
 import { ConvertirFormatoComponent } from './components/convertir-formato/convertir-formato.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +26,6 @@ import { ConvertirFormatoComponent } from './components/convertir-formato/conver
     PreguntaVfComponent,
     PreguntaOpcionmultipleComponent,
     ConvertirFormatoComponent
-   
   ],
   imports: [
     BrowserModule,HttpClientModule,AppRoutinModule,

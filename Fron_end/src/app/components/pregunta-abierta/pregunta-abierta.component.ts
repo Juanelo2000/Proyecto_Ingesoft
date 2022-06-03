@@ -48,6 +48,7 @@ export class PreguntaAbiertaComponent implements OnInit {
     this.pregunta.retroalimentacion=this.form.value.retroalimentacion
     this.pregunta.corte=this.form.value.corte
     this.pregunta.tipo="abierta"
+
     this.service.getPregunta()
     .subscribe(data=>{
       this.preguntas=data;

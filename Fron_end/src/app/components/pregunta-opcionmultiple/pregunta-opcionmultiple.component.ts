@@ -62,6 +62,7 @@ export class PreguntaOpcionmultipleComponent implements OnInit {
     this.pregunta.retroalimentacion=this.form.value.retroalimentacion
 
     this.pregunta.corte=this.form.value.corte
+    this.pregunta.tipo="opcion multiple"
    
     this.service.getPregunta()
     .subscribe(data=>{

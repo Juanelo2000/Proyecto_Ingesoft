@@ -10,5 +10,6 @@ export class Pregunta {
     select!: boolean;
     tipo!:string;
 
+
     
 }
