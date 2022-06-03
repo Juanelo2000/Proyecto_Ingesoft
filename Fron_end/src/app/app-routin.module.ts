@@ -9,7 +9,7 @@ import { PreguntaComponent } from './PruebaMiguel/pregunta/pregunta.component';
 const routes: Routes = [
   {path:'crear', component: CrearPreguntaComponent},
   {path:'listar', component: ListarPreguntasComponent},
-  {path: 'pregunta', component: PreguntaComponent},
+  {path: 'pregunta', component: PreguntaComponent}, //Miguel
   {path: 'pregunta-abierta', component: PreguntaAbiertaComponent}
 ];
 

@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Pregunta } from '../models/pregunta';
+import { Materia } from '../models/materia';
 @Injectable({
   providedIn: 'root'
 })
@@ -17,4 +18,10 @@ export class CrearPreguntaService {
     return this.http.get<Pregunta[]>(`${this.url+"/listaPreguntas"}`)
     
   }
+
+  getMaterias():Observable<Materia[]>{
+    return this.http.get<Materia[]>(`${this.url+"/listaMaterias"}`)
+    
+  }
+
 }

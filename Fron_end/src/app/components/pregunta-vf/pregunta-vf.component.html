@@ -1,10 +1,32 @@
 <div class="body">
     <div class="login">
         <form [formGroup]="form">
-            <h1>PREGUNTA VEDADERO O FALSO</h1>
+            <h1>VERDADERO O FALSO</h1>
+
+            <br>
+            <mat-form-field class="ancho" appearance="fill">
+            <mat-label >Nombre de la materia</mat-label>
+            <select matNativeControl required formControlName="materia">
+                <option value=""></option>
+                <option *ngFor="let materia of materias">{{materia.nombre}}</option>
+             </select>
+            </mat-form-field>
+            <br>
+
+            <mat-form-field class="ancho" appearance="fill">
+                <mat-label >Corte</mat-label>
+                <select matNativeControl required formControlName="corte">
+                    <option value=""></option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                 </select>
+                </mat-form-field>
+                <br>
+
             <mat-form-field class="ancho" appearance="fill" >
                 <mat-label>Descripcion de la pregunta:</mat-label>
-             <input matInput   formControlName="descripcion">
+             <input matInput formControlName="descripcion">
             </mat-form-field>
             <br>
 

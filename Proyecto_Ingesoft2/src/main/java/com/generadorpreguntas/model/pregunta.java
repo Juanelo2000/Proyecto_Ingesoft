@@ -17,8 +17,9 @@ public class pregunta {
 	private String retroalimentacion;     //#
     private String[] respuestas;
     private int corte;
+    private boolean select;
 	public pregunta(String materia, String titulo, String descripcion, String retroalimentacion, String[] respuestas,
-			int corte) {
+			int corte, boolean select) {
 		super();
 		this.materia = materia;
 		this.titulo = titulo;
@@ -26,6 +27,7 @@ public class pregunta {
 		this.retroalimentacion = retroalimentacion;
 		this.respuestas = respuestas;
 		this.corte = corte;
+		this.select = select;
 	}
 	public pregunta() {
 		super();
@@ -73,7 +75,14 @@ public class pregunta {
 	public void setCorte(int corte) {
 		this.corte = corte;
 	}
+	public boolean isSelect() {
+		return select;
+	}
+	public void setSelect(boolean select) {
+		this.select = select;
+	}
     
+	
     
 
 }

@@ -7,6 +7,7 @@ export class Pregunta {
     retroalimentacion!: string;
     respuestas!: String[];
     corte!: number;
+    select!: boolean;
 
     
 }
