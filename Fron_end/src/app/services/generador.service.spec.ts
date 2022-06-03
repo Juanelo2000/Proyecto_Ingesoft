@@ -1,6 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 
-import { CrearPreguntaService } from './crear-pregunta.service';
+import { CrearPreguntaService } from './generador_service';
 
 describe('CrearPreguntaService', () => {
   let service: CrearPreguntaService;

@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { Pregunta } from 'src/app/models/pregunta';
-import { CrearPreguntaService } from 'src/app/services/crear-pregunta.service';
+import { CrearPreguntaService } from 'src/app/services/generador_service';
 import { PreguntaAbiertaComponent } from '../pregunta-abierta/pregunta-abierta.component';
 import {MatDialog} from '@angular/material/dialog';
 import { PreguntaVfComponent } from '../pregunta-vf/pregunta-vf.component';

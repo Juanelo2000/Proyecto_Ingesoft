@@ -4,7 +4,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
 import { Materia } from 'src/app/models/materia';
 import { Pregunta } from 'src/app/models/pregunta';
-import { CrearPreguntaService } from 'src/app/services/crear-pregunta.service';
+import { CrearPreguntaService } from 'src/app/services/generador_service';
 
 @Component({
   selector: 'app-pregunta-vf',
@@ -49,7 +49,7 @@ export class PreguntaVfComponent implements OnInit {
     this.pregunta.descripcion=this.form.value.descripcion
     this.pregunta.retroalimentacion=this.form.value.retroalimentacion
     this.pregunta.corte=this.form.value.corte
-    this.pregunta.tipo="verdadero y falso"
+    this.pregunta.tipo="vyf"
 
     this.service.getPregunta()
     .subscribe(data=>{

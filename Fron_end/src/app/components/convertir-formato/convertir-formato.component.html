@@ -1,1 +1,6 @@
-<p>convertir-formato works!</p>
+<div>
+<p class="formato" *ngFor="let palabra of convertidos">{{palabra}}</p>
+</div>
+<div>
+    <button (click)="exportar()">Exportar</button> 
+</div>
