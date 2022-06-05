@@ -1,9 +1,62 @@
-.formato{
-   
-    text-align: justify;
+body {
+    background-image: url(https://identity.poli.edu.co/authenticationendpoint/img/bg_login_poli.jpg);
+}
+
+
+.formato {
+    
+    
+    border: 1px solid rgb(255, 255, 255);
+    background-color: #527ea379;
     text-align: center;
+    font-size: large;
+    color: white;
+    width: 60%;
+    height: 35;
+
+    margin-left: 7cm;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.botonexportar {
+    position: absolute;
+    text-align: center;
+    top: 3cm;
+    left: 30cm;
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.botonstyle1 {
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: large;
+    width: 4.5cm;
+    height: 500px;
+    margin-right: 30px;
+    cursor: pointer;
 
 }
-.div{
-    margin-top: 50%;
+
+
+.botonexportar2 {
+    position: absolute;
+    text-align: center;
+    top: 3cm;
+    right: 29.5cm;
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.botonexportar32 {
+    position: relative;
+    text-align: center;
+    top: -600px;
+    left: 150px;
+    margin-left: 60%;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }

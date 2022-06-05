@@ -1,12 +1,54 @@
+<body>
+
+  <div>
+    <button class="btn btn-light genformatobutton" (click)="generarFormato()">Generar formato Moodle</button>
+  </div>
+
+  <table class="table table-secondary">
+    <thead>
+
+      <tr>
+        <th class="desing1 col-1">#</th>
+        <th class="desing1 col-1">Nombre Materia</th>
+        <th class="desing1 col-1">Titulo</th>
+        <th class="desing1 col-2">Descripcion</th>
+        <th class="desing1 col-2">Retroalimentacion</th>
+        <th class="desing1 col-2">Respuestas</th>
+        <th class="desing1 col-1">Corte</th>
+      </tr>
+
+    </thead>
+    <tbody>
+
+      <tr *ngFor="let item of listarpregunta">
+        <td scope="row">
+          <input class="form-check-input" type="checkbox" [value]="item.id" [checked]="item.select"
+            (change)="preguntaSeleccionada()" [(ngModel)]="item.select" />
+        </td>
+        <td>{{item.materia}}</td>
+        <td>{{item.titulo}}</td>
+        <td>{{item.descripcion}}</td>
+        <td>{{item.retroalimentacion}}</td>
+        <td>{{item.respuestas}}</td>
+        <td>{{item.corte}}</td>
+
+
+      </tr>
+
+
+    </tbody>
+
+
+
+  </table>
+</body>
+
+<!--
 <div>
     <div id="contact">
       <div class="sectionheader">	<h1>LISTADO DE PREGUNTAS </h1></div>
       <div class="card-body">
-     <!-- <div class="form-group form-inline">
-        Search book by name:
-        <input class="form-control ml-2" type="text" name="searchTerm" [(ngModel)]="searchTerm"
-          (input)="search($event.target.value)" />
-      </div> -->
+
         <table class="table table-striped">
           <thead>
             <th>#</th>
@@ -29,15 +71,14 @@
                 />
 
               </td>
-              <!--<td>{{item.id}}</td>-->
               <td>{{item.materia}}</td>
               <td>{{item.titulo}}</td>
               <td>{{item.descripcion}}</td>
               <td>{{item.retroalimentacion}}</td>
               <td>{{item.respuestas}}</td>
               <td>{{item.corte}}</td>
-              <!--<td>
-              </td>-->
+              <td>
+              </td>
             </tr>
           </tbody>
         </table>
@@ -47,4 +88,4 @@
       </div>
   
     </div>
-  </div>
+  </div> -->

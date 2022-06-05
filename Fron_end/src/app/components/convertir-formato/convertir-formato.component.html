@@ -1,6 +1,14 @@
-<div>
-<p class="formato" *ngFor="let palabra of convertidos">{{palabra}}</p>
-</div>
-<div>
-    <button (click)="exportar()">Exportar</button> 
-</div>
+<body>
+
+    <div>
+        <br>
+        <p class="formato" *ngFor="let palabra of convertidos">{{palabra}}</p>
+    </div>
+    <div  class="botonexportar">
+        <button class="btn btn-light botonstyle1" (click)="exportar()">EXPORTAR PREGUNTAS</button>
+    </div>
+
+    <div  class="botonexportar2">
+        <button class="btn btn-light botonstyle1" (click)="exportar()">EXPORTAR PREGUNTAS</button>
+    </div>
+</body>

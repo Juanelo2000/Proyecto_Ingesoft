@@ -1,22 +1,50 @@
+<!--
 <div class="body">
     <div class="carnet">
         <form [formGroup]="form">
             <h1>Crear pregunta</h1>
             <mat-form-field class="ancho" appearance="fill">
-                    <mat-label >Tipo de pregunta</mat-label>
-                        <select matNativeControl required formControlName="tipo">
-                            <option value="abierta">Abierta</option>
-                            <option value="multiple" >Seleccion multiple</option>
-                            <option value="vyf">Falso y verdadero </option>
-                         </select>
-                    </mat-form-field>
+                <mat-label>Tipo de pregunta</mat-label>
+                <select matNativeControl required formControlName="tipo">
+                    <option value="abierta">Abierta</option>
+                    <option value="multiple">Seleccion multiple</option>
+                    <option value="vyf">Falso y verdadero </option>
+                </select>
+            </mat-form-field>
             <br>
-            
+
             <br>
             <div class="example-button-row">
-            <button mat-raised-button class="btn"(click)="openDialog()" color="primary">Seleccionar Pregunta</button>
-        </div>
+                <button mat-raised-button class="btn" (click)="openDialog()" color="primary">Seleccionar
+                    Pregunta</button>
+            </div>
         </form>
+    </div>
 </div>
-</div>
+-->
 
+<body>
+    <div class="body">
+        <div class="form-floating carnet">
+            <form [formGroup]="form">
+                <p class="fs-2 fw-bolder crearpregunta">CREAR PREGUNTA</p>
+                <select class="form-select" formControlName="tipo">
+                    <!--<option selected>Seleccione el tipo de pregunta</option>-->
+                    <option value="abierta" class="desing1">Abierta</option>
+                    <option value="multiple" class="desing1">Selección Multiple</option>
+                    <option value="vyf" class="desing1">Verdadero y Falso</option>
+                </select>
+
+                <br>
+
+                <div class="botonSelPregunta">
+                    <button class="btn btn-light botonstyle1" type="button" (click)="openDialog()">Seleccionar
+                        Pregunta</button>
+                </div>
+
+            </form>
+        </div>
+
+
+    </div>
+</body>
